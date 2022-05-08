@@ -81,7 +81,8 @@ Jan<-c(0.15,0.25,0.10,0.20,1.85,1.97,0.80,0.20,0.10,0.50,0.82,0.40,1.80,0.20,1.1
 Jul<-c(0.30,0.22,0.10,0.12,0.20,0.10,0.10,0.10,0.10,0.10,0.10,0.17,0.20,2.80,0.85,0.10,
        0.10,1.23,0.45,0.30,0.20,1.20,0.10,0.15,0.10,0.20,0.10,0.20,0.35,0.62,0.20,1.22,
        0.30,0.80,0.15,1.53,0.10,0.20,0.30,0.40,0.23,0.20,0.10,0.10,0.60,0.20,0.50,0.15,
-      0.60,0.30,0.80,1.10)
+      0.60,0.30,0.80,1.10,
+      0.2,0.1,0.1,0.1,0.42,0.85,1.6,0.1,0.25,0.1,0.2,0.1)
 ```
 
 ### (a)
@@ -192,7 +193,7 @@ prof_log_lik=function(a){
 
 vx=seq(.1,3,length=50)
 vl=-Vectorize(prof_log_lik)(vx)
-plot(vx,vl,type="l",main='Jan profile likelihood for gamma rate')
+plot(vx,vl,type="l",main='Jan profile likelihood (fixed shape)')
 ```
 
 
@@ -202,10 +203,10 @@ plot(vx,vl,type="l",main='Jan profile likelihood for gamma rate')
 x=Jul
 vx=seq(.1,3,length=50)
 vl=-Vectorize(prof_log_lik)(vx)
-plot(vx,vl,type="l",main='Jul profile likelihood for gamma rate')
+plot(vx,vl,type="l",main='Jul profile likelihood (fixed shape)')
 ```
 
-For alpha, we can use the same method to get the profile likelihood.
+For fixed rate, we can use the same method to get the profile likelihood.
 
 ```{r}
 x=Jan
@@ -216,7 +217,7 @@ prof_log_lik=function(z){
 
 vx=seq(.1,3,length=50)
 vl=-Vectorize(prof_log_lik)(vx)
-plot(vx,vl,type="l",main='Jan profile likelihood for gamma shape')
+plot(vx,vl,type="l",main='Jan profile likelihood (fixed rate)')
 ```
 
 ```{r}
@@ -224,7 +225,7 @@ x=Jul
 
 vx=seq(.1,5,length=50)
 vl=-Vectorize(prof_log_lik)(vx)
-plot(vx,vl,type="l",main='Jul profile likelihood for gamma shape')
+plot(vx,vl,type="l",main='Jul profile likelihood (fixed rate)')
 ```
 
 
