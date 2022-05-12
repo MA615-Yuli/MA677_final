@@ -630,3 +630,12 @@ ggplot() +
     annotate("text", x = 0.85, y = 7.5, label = "x=17, n=18") + theme_bw()
 ```
 
+
+## Describe what you learned: 
+What did you learn? What will you do next? What will you do differently as you move forward?    
+
+I learnt how to use R to build MLE model, how to construct profile likelihood in R, how to apply empirical bayes in R. I will continue studying MCMC in the future. I will find relative nextbooks, videos and hands-on experience to reach that.
+
+
+
+
