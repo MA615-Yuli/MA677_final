@@ -46,11 +46,11 @@ medianprrox<-function(k,n){
 }
 
 
-E(2.5,5)
-medianprrox(2.5,5)
+E(3,5)
+medianprrox(3,5)
 
-E(5,10)
-medianprrox(5,10)
+(E(5,10)+E(6,10))/2
+(medianprrox(5,10)+medianprrox(6,10))/2
 
 ```
 
